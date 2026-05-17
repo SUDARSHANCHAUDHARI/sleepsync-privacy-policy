@@ -1,167 +1,220 @@
-# SleepSync — Privacy Policy
+# SleepSync Privacy Policy
 
-**Effective Date:** 2026-03-21
-**Last Updated:** 2026-03-21
-**Version:** 1.0.0
+This repository contains the public privacy policy for SleepSync.
 
-Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
+- Privacy policy: [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
+- Web version: https://sudarshanchaudhari.github.io/sleepsync-privacy-policy/
+- Contact: sunny.sudarshan@gmail.com
 
----
+# SleepSync Privacy Policy
 
-SleepSync is a sleep tracking and improvement app for Android. It tracks your sleep sessions, plays ambient audio to help you fall asleep, detects movement during sleep using the device's activity recognition sensor, and optionally provides AI-powered sleep insights via Google Gemini. All sleep data is stored locally on your device.
+**Effective Date:** May 17, 2026
+_Last updated: May 17, 2026_
+**Version:** 1.1.0
 
----
+SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep tracking app for Android with local sleep sessions, reminders, activity recognition, audio playback, and optional Gemini AI sleep insights. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using SleepSync you agree to the practices described below.
 
-## Data Collection
+## Information We Collect
 
-### Data Stored Locally on Your Device
+### Location Data
+- SleepSync does not collect location data.
 
-| Data | Purpose | Storage |
-|---|---|---|
-| Sleep sessions (start time, end time, duration, quality rating) | Core sleep tracking | Room database (encrypted) |
-| Movement and activity data during sleep | Sleep quality analysis | Room database (encrypted) |
-| Sleep schedule and alarm settings | Personalisation | DataStore on your device |
-| App preferences | Personalisation | DataStore on your device |
+### Account Information
+- No account is required to use SleepSync.
 
-### Activity Recognition
+### Device Information
+- Sleep sessions, start/end times, duration, sleep patterns, movement/activity signals, reminder settings, and preferences are stored locally.
 
-SleepSync uses Android's Activity Recognition API to detect movement during sleep. Movement data is processed on-device and stored locally. It is not transmitted to Sudarshan Tech Labs or any external server.
+## How We Use Your Information
 
-### Google Gemini API (user-initiated only)
+### Location Sharing
+- SleepSync does not use your location.
 
-When you request AI sleep insights, anonymised sleep pattern data (sleep durations and quality ratings, no personal notes) is sent to the Gemini API. Sudarshan Tech Labs does not retain this data.
+### Account Management
+- Track sleep sessions and provide local sleep summaries.
+- Provide optional AI sleep insights when you request them.
 
----
+### Service Improvement
+- Improve local sleep tracking and reminder reliability.
+- We do not sell, rent, or monetize your sleep data.
 
-## How We Use Your Data
+## Storage and Retention
 
-| Purpose | Data Used |
-|---|---|
-| Record and display sleep sessions | Local sleep data |
-| Play ambient sounds to aid sleep | Device audio (MediaPlayer foreground service) |
-| Detect movement during sleep | Activity Recognition sensor |
-| Send sleep schedule reminders and alarms | Local WorkManager exact alarm |
-| Generate AI sleep insights (on request) | Sleep data sent to Gemini API |
-| Display sleep trend charts | Local sleep history |
+### Data Storage
+- Sleep data and preferences are stored locally using on-device storage such as Room/DataStore.
+- Optional AI insight requests may send summarized sleep patterns to Google Gemini. Audio content is not sent to Sudarshan Tech Labs.
 
----
+### Data Retention
+- Local sleep data remains until you delete it, clear app data, or uninstall the app.
 
-## Background Services
-
-SleepSync uses two foreground services during active sleep tracking:
-
-- **Sleep Tracking Service** (`FOREGROUND_SERVICE_DATA_SYNC`) — Records movement and sleep session data in the background
-- **Audio Service** (`FOREGROUND_SERVICE_MEDIA_PLAYBACK`) — Plays ambient sounds to aid sleep
-
-Both services are visible via a persistent notification and can be stopped at any time.
-
----
-
-## Data Storage and Security
-
-- **Sleep data:** Stored in an encrypted Room database (security-crypto)
-- **No cloud storage:** Sudarshan Tech Labs operates no backend server
-- **Android sandbox:** Additional protection from Android's application isolation
-
-## Data Retention
-
-| Data | Retention |
-|---|---|
-| All local sleep data | Until you delete it or uninstall the App |
-
----
+### Data Security
+- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
+- Local data remains on your device or browser unless a feature you use requires a named third-party service.
+- Network communication uses HTTPS/TLS where applicable.
+- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
 
 ## Data Sharing
 
-We do not sell your data. The only external transmission is anonymised sleep data sent to the Gemini API when you explicitly request insights.
+### Family Groups
+- SleepSync does not use MyFamilyTracker-style family groups unless explicitly described in this policy.
+- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
+- You control feature use through the app settings, permissions, account controls, or platform settings.
 
----
+### Third Parties
+- Google Gemini may receive summarized sleep data only when optional AI insights are used.
+- No sleep data is sent to Sudarshan Tech Labs servers.
 
-## Permissions Explained
+We do **not** share your data with:
+- Data brokers
+- Unrelated advertising networks, unless advertising is explicitly listed above for this app
+- Third parties unrelated to the app features described in this policy
 
-| Permission | Why It Is Needed |
-|---|---|
-| `INTERNET` | Call the Gemini API when you request sleep insights |
-| `ACCESS_NETWORK_STATE` | Check connectivity before Gemini API call |
-| `WAKE_LOCK` | Keep the device active during sleep tracking |
-| `FOREGROUND_SERVICE` | Run sleep tracking and audio services in the background |
-| `FOREGROUND_SERVICE_MEDIA_PLAYBACK` | Required service type for background ambient audio |
-| `FOREGROUND_SERVICE_DATA_SYNC` | Required service type for background sleep tracking |
-| `POST_NOTIFICATIONS` | Send sleep schedule reminders and alarm notifications |
-| `VIBRATE` | Haptic feedback for alarms |
-| `SCHEDULE_EXACT_ALARM` | Schedule precise sleep and wake alarms |
-| `USE_EXACT_ALARM` | Use exact alarms on Android 13+ |
-| `RECEIVE_BOOT_COMPLETED` | Reschedule alarms after device restart |
-| `ACTIVITY_RECOGNITION` | Detect movement during sleep sessions |
+## Permissions Used
 
----
+### Required Permissions
+
+* **INTERNET and ACCESS_NETWORK_STATE**: Used for optional Gemini AI features and network checks.
+* **ACTIVITY_RECOGNITION**: Used for movement/activity-based sleep tracking.
+* **FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK, FOREGROUND_SERVICE_DATA_SYNC**: Used for active sleep/audio/tracking sessions.
+* **POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED, WAKE_LOCK, VIBRATE**: Used for sleep reminders and reliable alerts.
+
+### Optional Permissions
+
+* AI insights, activity recognition, notifications, and exact alarms are controlled by you through app or Android settings.
 
 ## Your Rights and Controls
 
-- **Delete individual sleep sessions:** Use the delete function in the App
-- **Stop background services:** Dismiss the persistent notification
-- **Delete all data:** Uninstall or go to Android Settings > Apps > SleepSync > Storage > Clear Data
+### Location Sharing Control
+- No location sharing exists in SleepSync.
 
----
+### Account Management
+- No account is required.
+
+### Data Access
+- You can view, edit, export, or delete local sleep data in the app.
+
+### GDPR Rights (EU Users)
+If you are in the European Union, you have additional rights:
+- **Right to Access**: Request a copy of your personal data
+- **Right to Rectification**: Correct inaccurate data
+- **Right to Erasure**: Request deletion of your data
+- **Right to Restrict Processing**: Limit how we use your data
+- **Right to Data Portability**: Receive your data in a portable format
+- **Right to Object**: Object to certain types of processing
+
+To exercise these rights, contact us using the methods in the Contact Us section.
+
+### Permissions
+- You can revoke Android permissions in Android Settings -> Apps -> SleepSync -> Permissions.
+- Browser permissions and storage can be managed in your browser site settings for web apps.
+- Revoking required permissions may prevent related features from functioning.
 
 ## Children's Privacy
 
-SleepSync is not directed at children under 13. We do not knowingly collect personal information from children.
+- Our app is **not intended for children under 13**.
+- We do not knowingly collect data from children under 13.
+- If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.
+- Parents and guardians should supervise children's use of apps that store personal content.
 
----
+## Security
+
+- Local data is protected by Android, browser, or operating-system app sandboxing.
+- Network communication uses HTTPS/TLS where applicable.
+- Third-party services named in this policy provide their own security controls and privacy policies.
+- You are responsible for protecting your device, browser profile, and account credentials.
+- We do not sell your personal data.
 
 ## Changes to This Policy
 
-We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:
+- Noted in the app release notes or repository when applicable
+- Reflected with a new "Last updated" date
+- Communicated in the app or project page if the change is significant
 
-- In-app notification
-- Updated policy date on this page
-
-Continued use of SleepSync after changes become effective constitutes your acceptance of the updated policy.
-
----
+The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.
 
 ## Contact Us
 
-For privacy questions, data access requests, or account deletion:
+If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:
 
-- **Email:** sudarshantechlabs@gmail.com
-- **Developer:** sunny.sudarshan@gmail.com
-- **Website:** https://sudarshantechlabs.com
-- **Response Time:** Within 48 hours
+* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/sleepsync-privacy-policy
+* **Email:** sunny.sudarshan@gmail.com
+* **Main App Repository:** https://github.com/SUDARSHANCHAUDHARI/SleepSync
+
+We will respond as quickly as possible, typically within 48 hours.
+
+## Data Deletion
+
+### How to Delete Your Account:
+This app does not require an account. You can delete local app data using the options below:
+
+#### Option 1: In-App Deletion
+1. Open SleepSync
+2. Delete individual entries, reminders, history, or settings where the app provides controls
+3. Or use Android/browser settings to clear app/site data
+4. Uninstalling the app also removes local app-private data
+
+#### Option 2: Email Deletion Request
+Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.com**
+- Subject: "Data Deletion Request - SleepSync"
+- Include: The email/account identifier used in the app, if any
+- We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
+
+#### Option 3: Web Deletion
+1. Visit the privacy policy website for contact and support information
+2. For browser apps, clear browser storage for the site
+3. For Android apps, clear storage from Android Settings if you want a full local reset
+
+### What Gets Deleted:
+- Local app data stored by the app
+- Local preferences and reminder/history records
+- Cached data controlled by the app or browser
+- Exported/shared files only if you delete them from where you saved them
+
+### Data Retention After Deletion:
+- **Immediate:** clearing app/site data removes local app-private data from your device/browser
+- **Uninstall:** removes app-private local data from Android apps
+- **Exports/shared files:** remain wherever you saved or sent them until you delete them
+
+To request deletion of your data:
+
+1. Open SleepSync, if installed
+2. Delete local content or clear app/site data where applicable
+3. Contact support via email: sunny.sudarshan@gmail.com
+4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
+5. We will confirm what data can be deleted and complete the request according to the retention terms above
+
+## Firebase and Google Services
+
+This app may use the following services depending on the features you enable and the installed version:
+
+- Google Gemini API for optional sleep insights
+
+Please review relevant third-party privacy policies:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
+- [Google Play Terms](https://play.google.com/about/play-terms/)
+- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
+
+## About SleepSync
+
+SleepSync is built with privacy in mind. The app is built with:
+- Kotlin and Jetpack Compose
+- Room/DataStore for local sleep data
+- Android activity recognition and foreground services
+- Google Gemini for optional AI insights
+
+The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
 
 ---
 
-## GDPR Rights (EU Users)
-
-If you are in the European Economic Area, you have the right to:
-
-- **Access** — Request a copy of your personal data
-- **Rectification** — Correct inaccurate data
-- **Erasure** — Request deletion of your data
-- **Restrict Processing** — Limit how we use your data
-- **Data Portability** — Receive your data in a portable format
-- **Object** — Object to certain types of processing
-
-To exercise these rights, contact us at the details above.
+**Last Updated:** May 17, 2026
 
 ---
 
-## Play Store Data Safety Summary
+## Recent Updates (Version 1.1.0 - May 17, 2026)
 
-| Data type | Collected | Shared | Purpose |
-|---|---|---|---|
-| Sleep session data | Local only (encrypted) | No | App functionality |
-| Movement data | Local only (encrypted) | No | Sleep quality tracking |
-| Sleep data (Gemini) | On request | Google (Gemini) | AI insights |
+- **Aligned policy with the shared privacy-policy structure.**
+- **Clarified local sleep data, optional Gemini insights, activity recognition, audio/tracking services, and reminders.**
 
----
-
----
-
-**This privacy policy complies with:**
-- Google Play Store requirements
-- GDPR (General Data Protection Regulation)
-- CCPA (California Consumer Privacy Act)
-
-**Last reviewed:** 2026-03-21
