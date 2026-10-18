@@ -56,7 +56,7 @@ SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep trackin
 ## Data Sharing
 
 ### Family Groups
-- SleepSync does not use MyFamilyTracker-style family groups unless explicitly described in this policy.
+- SleepSync does not use family groups unless explicitly described in this policy.
 - If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
 - You control feature use through the app settings, permissions, account controls, or platform settings.
 
