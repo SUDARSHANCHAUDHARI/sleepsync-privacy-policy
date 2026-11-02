@@ -1,10 +1,10 @@
 # SleepSync Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: May 17, 2026_
-**Version:** 1.1.0
+_Last updated: November 2, 2026_
+**Version:** 1.2.0
 
-SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep tracking app for Android with local sleep sessions, reminders, activity recognition, audio playback, and optional Gemini AI sleep insights. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using SleepSync you agree to the practices described below.
+SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep logging app for Android: you enter your bedtime, wake time, sleep quality and notes by hand, and the app works out your sleep patterns, sleep debt, sleep score and consistency entirely on your device. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using SleepSync you agree to the practices described below.
 
 ## Information We Collect
 
@@ -15,7 +15,7 @@ SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep trackin
 - No account is required to use SleepSync.
 
 ### Device Information
-- Sleep sessions, start/end times, duration, sleep patterns, movement/activity signals, reminder settings, and preferences are stored locally.
+- Sleep entries you type in (bedtime, wake time, duration, sleep quality, notes) and your app preferences are stored locally. The app requests no Android permissions and reads no sensors.
 
 ## How We Use Your Information
 
@@ -23,26 +23,25 @@ SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep trackin
 - SleepSync does not use your location.
 
 ### Account Management
-- Track sleep sessions and provide local sleep summaries.
-- Provide optional AI sleep insights when you request them.
+- Store the sleep entries you log and show you local sleep summaries.
+- Calculate your sleep patterns, sleep debt, sleep score and consistency on your device.
 
 ### Service Improvement
-- Improve local sleep tracking and reminder reliability.
+- The app sends us no usage or diagnostic data, so nothing you do in it reaches Sudarshan Tech Labs.
 - We do not sell, rent, or monetize your sleep data.
 
 ## Storage and Retention
 
 ### Data Storage
 - Sleep data and preferences are stored locally using on-device storage such as Room/DataStore.
-- Optional AI insight requests may send summarized sleep patterns to Google Gemini. Audio content is not sent to Sudarshan Tech Labs.
+- Nothing you log is sent off your device.
 
 ### Data Retention
 - Local sleep data remains until you delete it, clear app data, or uninstall the app.
 
 ### Data Security
-- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
-- Local data remains on your device or browser unless a feature you use requires a named third-party service.
-- Network communication uses HTTPS/TLS where applicable.
+- Data is protected using the platform security controls available on Android.
+- Local data remains on your device. The app uses no third-party service.
 - You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
 
 ## Data Sharing
@@ -53,7 +52,7 @@ SleepSync ("we," "our," or "us") is an Android app. SleepSync is a sleep trackin
 - You control feature use through the app settings, permissions, account controls, or platform settings.
 
 ### Third Parties
-- Google Gemini may receive summarized sleep data only when optional AI insights are used.
+- SleepSync shares your sleep data with no third party at all. There is no analytics service, no crash reporter, no advertising network and no AI service in the app.
 - No sleep data is sent to Sudarshan Tech Labs servers.
 
 We do **not** share your data with:
@@ -65,14 +64,11 @@ We do **not** share your data with:
 
 ### Required Permissions
 
-* **INTERNET and ACCESS_NETWORK_STATE**: Used for optional Gemini AI features and network checks.
-* **ACTIVITY_RECOGNITION**: Used for movement/activity-based sleep tracking.
-* **FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK, FOREGROUND_SERVICE_DATA_SYNC**: Used for active sleep/audio/tracking sessions.
-* **POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM, RECEIVE_BOOT_COMPLETED, WAKE_LOCK, VIBRATE**: Used for sleep reminders and reliable alerts.
+* None. SleepSync declares no Android permissions.
 
 ### Optional Permissions
 
-* AI insights, activity recognition, notifications, and exact alarms are controlled by you through app or Android settings.
+* None. Because the app asks for no permissions, there is nothing to grant or revoke.
 
 ## Your Rights and Controls
 
@@ -97,9 +93,8 @@ If you are in the European Union, you have additional rights:
 To exercise these rights, contact us using the methods in the Contact Us section.
 
 ### Permissions
-- You can revoke Android permissions in Android Settings -> Apps -> SleepSync -> Permissions.
-- Browser permissions and storage can be managed in your browser site settings for web apps.
-- Revoking required permissions may prevent related features from functioning.
+- SleepSync requests no Android permissions, so there is nothing to review or revoke.
+- You can still clear all app data in Android Settings -> Apps -> SleepSync -> Storage.
 
 ## Children's Privacy
 
@@ -110,10 +105,9 @@ To exercise these rights, contact us using the methods in the Contact Us section
 
 ## Security
 
-- Local data is protected by Android, browser, or operating-system app sandboxing.
-- Network communication uses HTTPS/TLS where applicable.
-- Third-party services named in this policy provide their own security controls and privacy policies.
-- You are responsible for protecting your device, browser profile, and account credentials.
+- Local data is protected by Android app sandboxing.
+- The app makes no network requests, so there is no traffic to intercept.
+- You are responsible for protecting your device and account credentials.
 - We do not sell your personal data.
 
 ## Changes to This Policy
@@ -178,32 +172,32 @@ To request deletion of your data:
 
 ## Firebase and Google Services
 
-This app may use the following services depending on the features you enable and the installed version:
+SleepSync uses no Firebase service and no Google API. There is no analytics, no crash reporting, no advertising and no AI service in the app.
 
-- Google Gemini API for optional sleep insights
-
-Please review relevant third-party privacy policies:
+If you installed the app from Google Play, your download and any future update are handled by Google Play itself under Google's own terms:
 
 - [Google Privacy Policy](https://policies.google.com/privacy)
-- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
 - [Google Play Terms](https://play.google.com/about/play-terms/)
-- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
 
 ## About SleepSync
 
 SleepSync is built with privacy in mind. The app is built with:
 - Kotlin and Jetpack Compose
 - Room/DataStore for local sleep data
-- Android activity recognition and foreground services
-- Google Gemini for optional AI insights
 
-The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
+The app collects only the data you enter yourself, and all of it stays on your device.
 
 ---
 
-**Last Updated:** May 17, 2026
+**Last Updated:** November 2, 2026
 
 ---
+
+## Recent Updates (Version 1.2.0 - November 2, 2026)
+
+- **Removed the Google Gemini AI sleep insight sections.** That feature was taken out of the app, so the policy no longer describes it.
+- **Removed the activity recognition, audio playback and reminder sections.** The app now declares no Android permissions at all and reads no sensors.
+- **Stated plainly that the app uses no Firebase, analytics, crash reporting, advertising or AI service.**
 
 ## Recent Updates (Version 1.1.0 - May 17, 2026)
 
